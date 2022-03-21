@@ -1,0 +1,869 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+ul li {
+    list-style: none;
+}
+a:link {
+    text-decoration: none;
+    color: #464646;
+}
+body {
+    background-color: #ececec;
+    font-family: "바탕";
+    overflow-x: hidden;
+}
+
+#top1 {
+    position: fixed;
+    width: 100%;
+    background-color: none;
+    opacity: 0.7;
+    height: 85px;
+    background: none;
+    z-index: 99;
+}
+#top1 ul li {
+    display: inline-block;
+    margin-left: 25px;
+    font-size: 18px;
+    font-family: "Cambria Math";
+    font-weight: bold;
+}
+#top1 ul li a {
+    position: relative;
+}
+#top1 ul li a:visited {
+    color: #464646;
+}
+#top1 ul li a:after {
+    content: "";
+    position: absolute;
+    background: #86745e;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+#top1 ul li a:hover:after {
+    width: 100%;
+}
+#top1 ul li a:hover {
+    color: #000;
+}
+
+#menu1 {
+    float: left;
+    position: relative;
+    top: 30px;
+    left: 45px;
+}
+#menu2 {
+    float: right;
+    position: relative;
+    top: -54px;
+    left: -100px;
+}
+
+#logo1 {
+    width: 100%;
+    margin-left: 50%;
+}
+
+#pick {
+    width: 45px;
+    height: 45px;
+    margin-top: 20px;
+    padding-top: 20px;
+    background: none;
+    position: relative;
+    right: -1808px;
+    top: -110px;
+}
+
+#title1,
+#title2,
+#title3 {
+    font-size: 60px;
+    color: #464646;
+}
+
+/***************배너****************/
+
+#banner1 {
+    width: 100%;
+    height: 980px;
+    position: relative;
+    background: url("../image/banner1.jpg") no-repeat;
+    overflow: hidden;
+}
+#banner1 img {
+    position: absolute;
+    right: -10px;
+    top: -80px;
+    animation: ani 3s alternate infinite ease-in-out;
+}
+
+@keyframes ani {
+    0% {
+        transform: rotate(3deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-3deg);
+    }
+}
+#box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 135vh;
+}
+#banner1 a {
+    position: relative;
+    display: block;
+    padding: 10px 30px;
+    border: 2px solid #0c39ab;
+    font-size: 18px;
+    letter-spacing: 4px;
+    color: #0c39ab;
+    overflow: hidden;
+    font-weight: bold;
+    font-family: "Cambria Math";
+}
+#banner1 a #bt1 {
+    position: relative;
+    z-index: 1;
+    transition: 1s;
+}
+#banner1 a:hover #bt1 {
+    color: #fff;
+}
+
+#banner1 a .wave {
+    position: absolute;
+    top: calc(100%+22px);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0c39ab;
+    transition: 1.5s;
+}
+#banner1 a:hover .wave {
+    top: 0;
+}
+
+#banner1 a .wave:before {
+    content: '';
+    position: absolute;
+    top: -22px;
+    left: 0;
+    width: 100%;
+    height: 22px;
+    background: url("../image/wave.png");
+    animation: animate 1.5s linear infinite;
+}
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 118px;
+    }
+}
+
+#flower img {
+    width: 100%;
+}
+
+/**************신상품***************/
+
+#new {
+    height: 800px;
+    background: none;
+    width: 1700px;
+    margin: 70px auto 0;
+}
+#new img {
+    transition: all 1s;
+    width: 412px;
+    margin-left: 7px;
+}
+#new img:hover {
+    cursor: pointer;
+    transition: all 1s;
+}
+
+#table1 {
+    width: 1700px;
+    height: 700px;
+    position: relative;
+    z-index: 1;
+}
+#a,
+#a2 {
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+#a {
+    opacity: 1;
+    z-index: 2;
+}
+#a2 {
+    opacity: 0;
+    z-index: 1;
+}
+
+#table2 {
+    width: 1700px;
+    height: 700px;
+    position: relative;
+    z-index: 1;
+}
+#b,
+#b2 {
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+#b {
+    opacity: 1;
+    z-index: 2;
+}
+#b2 {
+    opacity: 0;
+    z-index: 1;
+}
+
+#table3 {
+    width: 1700px;
+    height: 700px;
+    position: relative;
+    z-index: 1;
+}
+#c,
+#c2 {
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+#c {
+    opacity: 1;
+    z-index: 2;
+}
+#c2 {
+    opacity: 0;
+    z-index: 1;
+}
+
+#table4 {
+    width: 1700px;
+    height: 700px;
+    position: relative;
+    z-index: 1;
+}
+#d,
+#d2 {
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+#d {
+    opacity: 1;
+    z-index: 2;
+}
+#d2 {
+    opacity: 0;
+    z-index: 1;
+}
+
+#title1 {
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 80px;
+}
+span {
+    border-bottom: 2px solid gray;
+}
+
+#bt2 {
+    background: none;
+    text-align: center;
+    padding: 14px 11px;
+    width: 100px;
+    border: 1px solid #685d59;
+    font-size: 17px;
+    color: #685d59;
+    font-weight: bold;
+    margin-left: 92%;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+#bt2:hover {
+    color: #ececec;
+}
+#bt2:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #685d59;
+    z-index: -1;
+    transition: 0.8s;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+#bt2:hover:before {
+    height: 180%;
+}
+
+/******************소개******************/
+
+#intro {
+    width: 1800px;
+    height: 1550px;
+    margin: 0 auto;
+    background: none;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+#int1,
+#int2 {
+    transition: transform 0.7s, opacity 1s;
+}
+#look {
+    background: none;
+    text-align: center;
+    padding: 14px 11px;
+    width: 100px;
+    top: -180px;
+    border: 1px solid #685d59;
+    font-size: 16px;
+    color: #685d59;
+    font-weight: bold;
+    margin-left: 750px;
+    cursor: pointer;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+
+#look:hover {
+    color: #ececec;
+    background: #685d59;
+    font-size: 17px;
+}
+
+/*********** best ************/
+
+#L_arrow,
+#R_arrow {
+    width: 100px;
+    height: 100px;
+    opacity: 0.6;
+}
+#L_arrow img,
+#R_arrow img {
+    width: 50px;
+    height: 50px;
+}
+#L_arrow:hover,
+#R_arrow:hover {
+    opacity: 1;
+}
+#L_arrow {
+    display: inline-block;
+    top: 70px;
+    position: relative;
+    left: 1540px;
+    cursor: pointer;
+}
+#R_arrow {
+    display: inline-block;
+    top: 70px;
+    position: relative;
+    left: 1540px;
+    cursor: pointer;
+}
+
+#best_slide {
+    width: 10000px;
+    margin-left: 50px;
+    height: 630px;
+    position: relative;
+
+}
+
+#best {
+    height: 1000px;
+    width: 1920px;
+    margin: 0 auto;
+    z-index: 10;
+    overflow: hidden;
+}
+#best.cla {
+    background: url("../image/best_3bg.png") no-repeat 745px center;
+}
+#best div {
+    text-align: center;
+}
+
+#best_img {
+    position: absolute;
+    left: -3630px;
+}
+#best_img li {
+    display: inline;
+    position: relative;
+}
+
+#best_img img {
+    height: 450px;
+    width: 230px;
+    margin: 0 64px;
+    padding-top: 50px;
+}
+#title2 {
+    margin: 180px 0 0;
+}
+
+.bg1 {
+    background: url("../image/best_1bg.png") no-repeat 745px center;
+    transition: all 1.5s;
+}
+.bg2 {
+    background: url("../image/best_2bg.png") no-repeat 745px center;
+    transition: all 1.5s;
+}
+.bg3 {
+    background: url("../image/best_3bg.png") no-repeat 745px center;
+    transition: all 1.5s;
+}
+.bg4 {
+    background: url("../image/best_4bg.png") no-repeat 745px center;
+    transition: all 1.5s;
+}
+.bg5 {
+    background: url("../image/best_5bg.png") no-repeat 745px center;
+    transition: all 1.5s;
+}
+
+#bt3:hover {
+    color: #685d59;
+}
+#bt3 {
+    background: none;
+    text-align: center;
+    padding: 12px 10px;
+    width: 150px;
+    border: 1px solid #685d59;
+    cursor: pointer;
+    font-size: 17px;
+    color: #ececec;
+    font-weight: bold;
+    margin-left: 46%;
+    margin-top: -5%;
+    position: relative;
+    transition: 0.8s;
+    overflow: hidden;
+    z-index: 0;
+}
+#bt3:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 180%;
+    z-index: -1;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+    background: #685d59;
+    transition: 0.8s;
+}
+#bt3:hover:before {
+    height: 0;
+}
+
+/********************술잔******************/
+
+#title3 {
+    margin-top: 30px;
+}
+
+#cup {
+    height: 1100px;
+    background: yellow;
+    width: 100%;
+    padding-top: 100px;
+    background: url("../image/cupbg.png") no-repeat center center;
+    background-size: 40%;
+    position: relative;
+}
+#cup ul li {
+    transition: all 2s;
+}
+#cup ul li img {
+    width: 370px;
+    height: 514px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#cup ul li > div {
+    width: 370px;
+    height: 514px;
+    overflow: hidden;
+    transition: 1s;
+}
+#cup ul li > div:hover {
+    border-radius: 50px 5px;
+}
+#cup ul li:nth-child(1) {
+    position: absolute;
+    left: 0;
+    top: 450px;
+}
+/*left:300px;*/
+#cup ul li:nth-child(2) {
+    position: absolute;
+    left: 770px;
+    top: 900px;
+}
+/*top:500px;*/
+#cup ul li:nth-child(3) {
+    position: absolute;
+    left: 1500px;
+    top: 450px;
+}
+/*top:250px;*/
+
+#cup ul li:hover:nth-child(1) img {
+    transform: scale(1.1);
+}
+#cup ul li:hover:nth-child(2) img {
+    transform: scale(1.1);
+}
+#cup ul li:hover:nth-child(3) img {
+    transform: scale(1.1);
+}
+
+#bt4 {
+    background: none;
+    text-align: center;
+    padding: 14px 11px;
+    width: 100px;
+    top: -25px;
+    border: 1px solid #685d59;
+    font-size: 17px;
+    color: #685d59;
+    font-weight: bold;
+    margin-left: 47%;
+    top: 280px;
+    cursor: pointer;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+#bt4 a {
+    color: #685d59;
+}
+#bt4:hover {
+    color: #ececec;
+    background: #685d59;
+}
+
+/********양조장*********/
+
+#made {
+    height: 630px;
+    background: pink;
+    margin: 130px 0;
+    background: url("../image/banner2.png") no-repeat;
+    background-size: cover;
+    transition: transform 0.7s, opacity 1s;
+}
+
+#ask a {
+    color: #685d59;
+}
+#ask {
+    background: none;
+    text-align: center;
+    padding: 12px 10px;
+    width: 150px;
+    top: 250px;
+    border: 1px solid #685d59;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 57%;
+    position: relative;
+    transition: 0.8s;
+}
+#ask:hover {
+    background: #685d59;
+}
+#ask a:hover {
+    color: #ececec;
+}
+
+/****푸터******/
+
+footer {
+    height: 350px;
+    background: linear-gradient(rgba(70,70,70,0.5),rgba(70,70,70,1));
+    padding-top: 100px;
+    font-size: 15px;
+    color: #ececec;
+}
+
+footer div {
+    display: inline-block;
+}
+footer > div:nth-child(1) {
+    width: 30%;
+}
+footer > div:nth-child(1) li {
+    width: 100%;
+    text-align: center;
+}
+
+footer > div:nth-child(2) {
+    width: 40%;
+    text-align: center;
+}
+footer > div:nth-child(3) {
+    width: 25%;
+    text-align: center;
+}
+
+#menu3 li {
+    margin: 15px 0 0 100px;
+}
+#menu3 li a {
+    color: #ececec;
+    font-size: 18px;
+    font-family: "Cambria Math";
+    text-align: center;
+}
+#menu3 li a:hover {
+    text-decoration: underline;
+}
+
+#logo2 {
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
+#call h2 {
+    margin: 10px;
+    font-size: 35px;
+}
+#center {
+    font-size: 18px;
+    font-weight: bold;
+}
+#copy {
+    font-weight: bold;
+}
+
+#foot3 {
+    width: 345px;
+    height: 180px;
+}
+#sns img {
+    width: 70px;
+    height: 70px;
+    opacity: 0.8;
+    float: top;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+#sns img:hover {
+    opacity: 1;
+}
+
+/******메뉴 팝업*****/
+
+#menupop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 98;
+    top: 85px;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+
+#popup_body {
+    width: 950px;
+    height: 880px;
+    background: #f7f2e9;
+    position: fixed;
+    transition: all 0.3s;
+}
+
+#menupop1,
+#menupop2,
+#menupop3,
+#menupop4,
+#menupop5,
+#menupop6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    transition-delay: 1s;
+}
+
+.bodybox1 {
+    text-align: center;
+    width: 490px;
+    height: 854px;
+    float: left;
+    background: url("../image/menupop_bg.jpg") no-repeat;
+}
+
+.bodybox2 {
+    width: 460px;
+    height: 100%;
+    text-align: center;
+    font-family: "바탕";
+    float: right;
+}
+
+.bodybox2 ul {
+    margin-top: 200px;
+}
+.bodybox2 ul a {
+    color: #464646;
+}
+.bodybox2 ul a:visited {
+    color: #464646;
+}
+.bodybox2 ul li {
+    font-size: 30px;
+    margin: 0;
+    color: #464646;
+    padding: 45px 0 0;
+    transition: all 0.3s;
+    cursor: pointer;
+    position: relative;
+}
+
+.bodybox2 ul li:after {
+    content: "";
+    position: absolute;
+    background: #464646;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: all 0.3s;
+}
+.bodybox2 ul li:hover:after {
+    width: 50%;
+}
+.bodybox2 ul li:hover {
+    font-weight: bolder;
+    font-size: 32px;
+}
+.close {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 90%;
+    top: 8%;
+    cursor: pointer;
+    transition: 0.5s;
+    background-image: url("../image/close.png");
+    opacity: 0.8;
+}
+.close:hover {
+    transform: rotate(180deg);
+}
+/******올라가는버튼*****/
+
+.upbt {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #685d59;
+    bottom: 40px;
+    right: 50px;
+    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.upbt.show {
+    opacity: 0.7;
+    visibility: visible;
+}
+.upbt.show:hover {
+    opacity: 1;
+}
+
+/******광고*****/
+#adpop,
+#bt5,
+.close2,
+.sale_pop {
+    position: fixed;
+    top: 13%;
+    left: 10%;
+    z-index: 99;
+}
+#adpop {
+    width: 600px;
+    height: 600px;
+}
+#adpop img {
+    width: 600px;
+    height: 600px;
+}
+
+.close2 {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.5s;
+    background-image: url("../image/close2.png");
+    background-size: cover;
+}
+.close2:hover {
+    transform: rotate(180deg);
+}
+#adpop a {
+    color: white;
+}
+#bt5 {
+    border: 2px solid white;
+    font-size: 20px;
+    padding: 10px 45px 5px;
+    border-radius: 20px 20px;
+    top: 66%;
+    left: 21%;
+    letter-spacing: 4px;
+    font-family: Cooper Std;
+    transition: 0.5s;
+}
+
+#bt5:hover {
+    background: white;
+    color: #ff6b4c;
+}

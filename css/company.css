@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+*{margin:0;padding:0;}
+
+ul li{list-style:none;}
+a:link{text-decoration:none;color:#ececec;}
+body{background-color:none;font-family:"바탕";}
+
+
+#top1{position:fixed;width:100%;
+	opacity:0.7;height:85px;background:none;z-index:99;}
+#top1 ul li{display:inline-block;margin-left:25px;font-size:18px;	
+	font-family:"Cambria Math";font-weight:bold;}
+#top1 ul li a{position:relative; }
+#top1 ul li a:visited{color:#ececec;}
+#top1 ul li a:after{content:"";position:absolute;
+	background:#86745e;height:3px;width:0;left:0;bottom:-10px;
+	transition:0.3s;}
+#top1 ul li a:hover:after{width:100%;}
+#top1 ul li a:hover{color:#f3e29d;}
+
+
+
+#menu1{float:left;position:relative;top:38px;left:45px;}
+#menu2{float:right;position:relative;top:-50px;left:-100px;}
+
+
+#logo1{width:100%;margin-left:50%}
+	
+#pick{width:50px;height:50px;margin-top:20px;padding-top:20px;background:none;
+	position:relative;right:-1808px;top:-105px;}
+	
+	
+/*********************************************/
+ 
+ 
+#container{width:1920px;}
+
+#container .main_visual{position:fixed;overflow:hidden;
+	padding-bottom:56.25%;z-index:1;}
+
+
+#container .main_visual video{min-width:100%; min-height:100%;
+	position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);}
+	
+	
+/***********************************************/
+
